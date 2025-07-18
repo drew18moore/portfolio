@@ -1,5 +1,5 @@
 ---
-
+import Starfield from "../components/Starfield";
 ---
 
 <html lang="en">
@@ -11,6 +11,9 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<Starfield client:load />
+		<main style="position: relative; z-index: 1; padding: 4rem; color: white; max-width: 800px; margin: auto;">
+			<slot />
+		</main>
 	</body>
 </html>
