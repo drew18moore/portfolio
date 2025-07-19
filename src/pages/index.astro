@@ -1,5 +1,8 @@
 ---
 import Starfield from "../components/Starfield";
+import Hero from "../components/Hero";
+import "../styles/global.css";
+import "../styles/fonts.css";
 ---
 
 <html lang="en">
@@ -12,8 +15,8 @@ import Starfield from "../components/Starfield";
 	</head>
 	<body>
 		<Starfield client:load />
-		<main style="position: relative; z-index: 1; padding: 4rem; color: white; max-width: 800px; margin: auto;">
-			<slot />
+		<main class="relative z-1 p-0 max-w-800px mx-auto">
+			<Hero client:load />
 		</main>
 	</body>
 </html>

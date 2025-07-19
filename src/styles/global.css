@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --font-space: "Space Grotesk", sans-serif;
+}
+
+html {
+  font-family: var(--font-space);
+  color: rgba(255, 255, 255, 0.9);
+  scroll-behavior: smooth;
+}
