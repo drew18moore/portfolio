@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Skills from "../components/Skills";
 import Navbar from "../components/Navbar";
 import FeaturedProjects from "../components/FeaturedProjects";
+import Footer from "../components/Footer";
 import "../styles/global.css";
 import "../styles/fonts.css";
 ---
@@ -19,10 +20,11 @@ import "../styles/fonts.css";
 	<body>
 		<Starfield client:load />
 		<Navbar client:load />
-		<main class="relative p-0 max-w-800px mx-auto">
+		<main class="relative flex flex-col gap-20 p-0 max-w-800px mx-auto">
 			<Hero client:load />
 			<Skills client:load />
 			<FeaturedProjects client:load />
 		</main>
+		<Footer client:load />
 	</body>
 </html>
