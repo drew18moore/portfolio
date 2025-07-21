@@ -1,58 +1,22 @@
 import { useEffect, useRef } from "react";
 import "../styles/Skills.css";
+
 const skills = [
-  {
-    name: "c",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
-  },
-  {
-    name: "c++",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
-  },
-  {
-    name: "css",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-  },
-  {
-    name: "express",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg",
-  },
-  {
-    name: "git",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
-  },
-  {
-    name: "github",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg",
-  },
-  {
-    name: "html",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-  },
-  {
-    name: "javascript",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-  },
-  {
-    name: "mongodb",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-  },
-  {
-    name: "nodejs",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-  },
-  {
-    name: "react",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-  },
-  {
-    name: "typescript",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-  },
-  {
-    name: "astro",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-original.svg",
-  },
+  "../../public/icons/aws.svg",
+  "../../public/icons/css.svg",
+  "../../public/icons/docker.svg",
+  "../../public/icons/git.svg",
+  "../../public/icons/github.svg",
+  "../../public/icons/html.svg",
+  "../../public/icons/java.svg",
+  "../../public/icons/javascript.svg",
+  "../../public/icons/mongodb.svg",
+  "../../public/icons/nodejs.svg",
+  "../../public/icons/postgresql.svg",
+  "../../public/icons/react.svg",
+  "../../public/icons/redis.svg",
+  "../../public/icons/spring-boot.svg",
+  "../../public/icons/typescript.svg",
 ];
 
 const Skills = () => {
@@ -101,10 +65,10 @@ const Skills = () => {
             {skills.map((src, i) => (
               <div
                 key={i}
-                className="bg-white rounded-full p-3 absolute w-20 h-20 -translate-x-1/2 -translate-y-1/2 transition-opacity duration-300"
+                className="bg-white rounded-full p-3 absolute w-20 h-20 -translate-x-1/2 -translate-y-1/2  hover:w-24 hover:h-24 transition-[width,height] duration-300"
               >
                 <img
-                  src={src.icon}
+                  src={src}
                   alt={`orbit-${i}`}
                   className="w-full h-full object-cover"
                 />
