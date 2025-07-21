@@ -48,7 +48,7 @@ const Starfield = () => {
         const size = (1 - star.z / width) * 2;
         ctx!.beginPath();
         ctx!.arc(x, y, size, 0, 2 * Math.PI);
-        ctx!.fillStyle = "white";
+        ctx!.fillStyle = "lightblue";
         ctx!.fill();
       }
 

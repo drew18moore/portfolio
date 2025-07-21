@@ -2,6 +2,7 @@
 import Starfield from "../components/Starfield";
 import Hero from "../components/Hero";
 import Skills from "../components/Skills";
+import Navbar from "../components/Navbar";
 import "../styles/global.css";
 import "../styles/fonts.css";
 ---
@@ -16,7 +17,8 @@ import "../styles/fonts.css";
 	</head>
 	<body>
 		<Starfield client:load />
-		<main class="relative z-1 p-0 max-w-800px mx-auto">
+		<Navbar client:load />
+		<main class="relative p-0 max-w-800px mx-auto">
 			<Hero client:load />
 			<Skills client:load />
 		</main>
