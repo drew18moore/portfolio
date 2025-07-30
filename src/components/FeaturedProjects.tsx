@@ -11,7 +11,7 @@ type Project = {
 
 const FeaturedProjects = () => {
   return (
-    <section className="flex flex-col max-w-6xl mx-auto">
+    <section className="flex flex-col max-w-6xl mx-auto px-4">
       <h2 className="text-center text-3xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent mb-4">Featured Projects</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         {projects.map((project, i) => (

@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="text-center flex flex-col gap-4 items-center justify-center h-screen">
+    <section className="text-center flex flex-col gap-4 items-center justify-center h-screen px-4">
       <div className="flex flex-col">
 				<h1 className="text-7xl sm:text-9xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Drew</h1>
 				<h1 className="text-7xl sm:text-9xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">Moore</h1>

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "../styles/Skills.css";
 
 const skills = [
@@ -21,8 +21,28 @@ const skills = [
 
 const Skills = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const orbitRadius = 250;
+  const [orbitRadius, setOrbitRadius] = useState(250);
   const rotationSpeed = 0.005;
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 40rem)");
+
+    const handleChange = () => {
+      console.log("object");
+      console.log(mediaQuery.matches);
+      setOrbitRadius(mediaQuery.matches ? 250 : 170);
+    };
+
+    // Set initial radius
+    handleChange();
+
+    // Listen for changes
+    mediaQuery.addEventListener("change", handleChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleChange);
+    };
+  }, []);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -48,14 +68,14 @@ const Skills = () => {
     animate();
 
     return () => cancelAnimationFrame(animationFrame);
-  }, [skills.length]);
+  }, [orbitRadius, skills.length]);
 
   return (
     <div className="flex items-center justify-center overflow-hidden">
       <div className="relative w-[400px] h-[400px] perspective-3d">
         <div className="w-full h-full relative transform-style-3d ">
-          <div className="absolute flex justify-center items-center top-1/2 left-1/2 w-40 h-40 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-purple-600 to-blue-500 rounded-full">
-            <p className="text-5xl font-bold">Skills</p>
+          <div className="absolute flex justify-center items-center top-1/2 left-1/2 w-30 h-30 sm:w-40 sm:h-40 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-purple-600 to-blue-500 rounded-full">
+            <p className="text-3xl sm:text-5xl font-bold">Skills</p>
           </div>
 
           <div
@@ -65,7 +85,7 @@ const Skills = () => {
             {skills.map((src, i) => (
               <div
                 key={i}
-                className="bg-white rounded-full p-3 absolute w-20 h-20 -translate-x-1/2 -translate-y-1/2  hover:w-24 hover:h-24 transition-[width,height] duration-300"
+                className="bg-white rounded-full p-3 absolute w-14 h-14 sm:w-20 sm:h-20 -translate-x-1/2 -translate-y-1/2 hover:w-16 sm:hover:w-24 hover:h-16 sm:hover:h-24 transition-[width,height] duration-300"
               >
                 <img
                   src={src}
