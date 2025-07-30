@@ -32,14 +32,14 @@ const Footer = () => {
           <span className="flex items-center gap-2">
             <span className="flex items-center rounded-full">
               <img
-                src="../../public/icons/github-mark-white.svg"
+                src="/icons/github-mark-white.svg"
                 alt="GitHub"
                 className="w-6 h-6"
               />
             </span>
             <span className="flex items-center rounded-full overflow-hidden">
               <img
-                src="../../public/icons/linkedin.svg"
+                src="/icons/linkedin.svg"
                 alt="GitHub"
                 className="w-6 h-6 align-middle"
               />

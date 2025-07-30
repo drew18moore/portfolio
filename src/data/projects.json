@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Real-Time Chat App",
+    "technologies": [
+      { "name": "React", "icon": "/icons/react.svg" },
+      { "name": "TypeScript", "icon": "/icons/typescript.svg" },
+      { "name": "HTML", "icon": "/icons/html.svg" },
+      { "name": "Node.js", "icon": "/icons/nodejs.svg" },
+      { "name": "PostgreSQL", "icon": "/icons/postgresql.svg" },
+      { "name": "Docker", "icon": "/icons/docker.svg" },
+      { "name": "Redis", "icon": "/icons/redis.svg" },
+      { "name": "AWS", "icon": "/icons/aws.svg" }
+    ],
+    "bulletPoints": [
+      "Real-time messaging platform secured with JWTs",
+      "Hosted on AWS EC2 with Nginx reverse proxy",
+      "Mobile-first UI with React and Tailwind CSS",
+      "Implemented CI/CD pipeline using GitHub Actions"
+    ],
+    "image": "/projects/realtime-chat.png",
+    "demoLink": "https://chat.drewmoore.dev",
+    "repoLink": "https://github.com/drew18moore/realtime-chat"
+  },
+  {
+    "title": "Jimmy Overdrive",
+    "technologies": [{ "name": "Java", "icon": "/icons/java.svg" }],
+    "bulletPoints": [
+      "2D platformer game inspired by Johnny Upgrade with custom art and animations",
+      "Custom game loop, physics, UI, and rendering using vanilla Java and Swing",
+      "Designed upgrade system and level structure to encourage iterative gameplay",
+      "Published to GitHub with clear documentation and runnable release builds"
+    ],
+    "image": "/projects/mern-social.png",
+    "demoLink": "https://social-network-mern.vercel.app/",
+    "repoLink": "https://github.com/drew18moore/platformer-java"
+  },
+  {
+    "title": "Social Network App",
+    "technologies": [
+      { "name": "React", "icon": "/icons/react.svg" },
+      { "name": "TypeScript", "icon": "/icons/typescript.svg" },
+      { "name": "HTML", "icon": "/icons/html.svg" },
+      { "name": "CSS", "icon": "/icons/css.svg" },
+      { "name": "Node.js", "icon": "/icons/nodejs.svg" },
+      { "name": "MongoDB", "icon": "/icons/mongodb.svg" }
+    ],
+    "bulletPoints": [
+      "Responsive and mobile-first UI built using React",
+      "Secured REST API with JWTs using Node.js and Express",
+      "Implemented CI pipeline with GitHub Actions to run tests and verify builds on PRs",
+      "Achieved 94% backend test coverage using Jest and Supertest"
+    ],
+    "image": "/projects/mern-social.png",
+    "demoLink": "https://social-network-mern.vercel.app/",
+    "repoLink": "https://github.com/drew18moore/social-network-MERN"
+  }
+]

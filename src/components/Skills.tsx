@@ -2,21 +2,21 @@ import { useEffect, useRef } from "react";
 import "../styles/Skills.css";
 
 const skills = [
-  "../../public/icons/aws.svg",
-  "../../public/icons/css.svg",
-  "../../public/icons/docker.svg",
-  "../../public/icons/git.svg",
-  "../../public/icons/github.svg",
-  "../../public/icons/html.svg",
-  "../../public/icons/java.svg",
-  "../../public/icons/javascript.svg",
-  "../../public/icons/mongodb.svg",
-  "../../public/icons/nodejs.svg",
-  "../../public/icons/postgresql.svg",
-  "../../public/icons/react.svg",
-  "../../public/icons/redis.svg",
-  "../../public/icons/spring-boot.svg",
-  "../../public/icons/typescript.svg",
+  "/icons/aws.svg",
+  "/icons/css.svg",
+  "/icons/docker.svg",
+  "/icons/git.svg",
+  "/icons/github.svg",
+  "/icons/html.svg",
+  "/icons/java.svg",
+  "/icons/javascript.svg",
+  "/icons/mongodb.svg",
+  "/icons/nodejs.svg",
+  "/icons/postgresql.svg",
+  "/icons/react.svg",
+  "/icons/redis.svg",
+  "/icons/spring-boot.svg",
+  "/icons/typescript.svg",
 ];
 
 const Skills = () => {
