@@ -23,11 +23,11 @@ import projects from "../data/projects.json";
 				<h1 class="text-4xl text-center w-fit mx-auto font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Projects Showcase</h1>
 				{projects.map(project => (
 					<article id={project.title} class="flex flex-col gap-4 border border-white/90 p-4 rounded-md bg-black scroll-mt-16">
-						<div class="flex gap-4">
+						<div class="flex flex-col sm:flex-row gap-4">
 							<img
 								src={project.image}
 								alt={project.title}
-								class="w-1/2 rounded-md aspect-video object-cover"
+								class="sm:w-1/2 rounded-md aspect-video object-cover"
 							/>
 							<div class="flex flex-col gap-2">
 								<h2 class="text-3xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">{project.title}</h2>
@@ -49,8 +49,8 @@ import projects from "../data/projects.json";
 							))}
 						</div>
 						<span class="flex gap-2">
-							{project.demoLink && <a href={project.demoLink} target="_blank" class="cursor-pointer bg-gradient-to-r from-purple-600 to-blue-500 rounded-md px-6 py-2 mt-auto">Live Demo</a>}
-							{project.repoLink && <a href={project.repoLink} target="_blink" class="cursor-pointer bg-gradient-to-r from-blue-500 to-cyan-400 rounded-md px-6 py-2 mt-auto">GitHub Repo</a>}
+							{project.demoLink && <a href={project.demoLink} target="_blank" class="text-black/90 cursor-pointer bg-gradient-to-r from-purple-600 to-blue-500 rounded-md px-6 py-2 mt-auto">Live Demo</a>}
+							{project.repoLink && <a href={project.repoLink} target="_blink" class="text-black/90 cursor-pointer bg-gradient-to-r from-blue-500 to-cyan-400 rounded-md px-6 py-2 mt-auto">GitHub Repo</a>}
 						</span>
 					</article>
 				))}
