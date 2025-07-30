@@ -4,6 +4,7 @@ import "../styles/global.css";
 import "../styles/fonts.css";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
+import projects from "../data/projects.json";
 ---
 
 <html lang="en">
@@ -17,8 +18,43 @@ import Footer from "../components/Footer.astro";
 	<body>
 		<Starfield client:load />
 		<Navbar />
-		<main class="relative flex flex-col gap-20 p-0 max-w-800px mx-auto">
-			
+		<main class="relative flex flex-col gap-20 p-0 max-w-800px mx-auto px-4">
+			<div class="flex flex-col gap-4 mt-24 max-w-6xl mx-auto">
+				<h1 class="text-4xl text-center w-fit mx-auto font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Projects Showcase</h1>
+				{projects.map(project => (
+					<article id={project.title} class="flex flex-col gap-4 border border-white/90 p-4 rounded-md bg-black scroll-mt-16">
+						<div class="flex gap-4">
+							<img
+								src={project.image}
+								alt={project.title}
+								class="w-1/2 rounded-md aspect-video object-cover"
+							/>
+							<div class="flex flex-col gap-2">
+								<h2 class="text-3xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">{project.title}</h2>
+								<ul>
+									{project.bulletPoints.map((point) => (
+										<li class="text-md list-disc ml-4">
+											{point}
+										</li>
+									))}
+								</ul>
+							</div>
+						</div>
+						<div class="flex flex-wrap gap-2">
+							{project.technologies.map((tech) => (
+								<span class="flex items-center gap-2 border border-white/90 rounded-full px-4 py-2 bg-gray-900">
+									<img src={tech.icon} alt={tech.name} class="w-4 h-4" />
+									<span class="text-sm">{tech.name}</span>
+								</span>
+							))}
+						</div>
+						<span class="flex gap-2">
+							{project.demoLink && <a href={project.demoLink} target="_blank" class="cursor-pointer bg-gradient-to-r from-purple-600 to-blue-500 rounded-md px-6 py-2 mt-auto">Live Demo</a>}
+							{project.repoLink && <a href={project.repoLink} target="_blink" class="cursor-pointer bg-gradient-to-r from-blue-500 to-cyan-400 rounded-md px-6 py-2 mt-auto">GitHub Repo</a>}
+						</span>
+					</article>
+				))}
+			</div>
 		</main>
 		<Footer />
 	</body>
