@@ -1,12 +1,9 @@
 ---
 import Starfield from "../components/Starfield";
-import Skills from "../components/Skills";
 import "../styles/global.css";
 import "../styles/fonts.css";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
-import Hero from "../components/Hero.astro";
-import FeaturedProjects from "../components/FeaturedProjects.astro";
 ---
 
 <html lang="en">
@@ -15,15 +12,13 @@ import FeaturedProjects from "../components/FeaturedProjects.astro";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Drew Moore | Home</title>
+		<title>Drew Moore | Blog</title>
 	</head>
 	<body>
 		<Starfield client:load />
 		<Navbar />
 		<main class="relative flex flex-col gap-20 p-0 max-w-800px mx-auto">
-			<Hero />
-			<Skills client:load />
-			<FeaturedProjects />
+			
 		</main>
 		<Footer />
 	</body>
