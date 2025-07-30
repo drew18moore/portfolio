@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="px-6 py-6 mt-20 grid grid-cols-3 max-w-4xl mx-auto">
+    <footer className="px-6 py-6 mt-20 grid sm:grid-cols-3 gap-4 max-w-4xl mx-auto">
       <div className="text-gray-400">
         <p className="text-sm">&copy; {new Date().getFullYear()} Drew Moore.</p>
         <p className="text-xs mt-2">Built with Astro and Tailwind CSS</p>
