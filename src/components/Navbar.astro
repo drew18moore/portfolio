@@ -1,0 +1,23 @@
+---
+const { pathname } = Astro.url;
+
+const links = [
+  { name: "Home", href: "/"},
+  { name: "Projects", href: "/projects"},
+  { name: "Blog", href: "/blog"},
+]
+---
+<header class="fixed top-2 left-1/2 -translate-x-1/2 border border-white/90 rounded-full z-1 p-0.5 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 ">
+  <nav>
+    <ul class="flex gap-4">
+      {links.map(link => {
+        const isActive = pathname === link.href || pathname.startsWith(link.href + "/")
+        return (
+          <li class={`flex ${isActive ? "bg-gradient-to-r from-blue-500 to-cyan-400 text-black/90": ""} rounded-full`}>
+            <a href={link.href} class="cursor-pointer px-4 py-2">{link.name}</a>
+          </li>
+        )
+      })}
+    </ul>
+  </nav>
+</header>
