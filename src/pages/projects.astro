@@ -24,12 +24,15 @@ import projects from "../data/projects.json";
 				{projects.map(project => (
 					<article id={project.title} class="flex flex-col gap-4 border border-white/90 p-4 rounded-md bg-black scroll-mt-16">
 						<div class="flex flex-col sm:flex-row gap-4">
-							<img
-								src={project.image}
-								alt={project.title}
-								class="sm:w-1/2 rounded-md aspect-video object-cover"
-							/>
-							<div class="flex flex-col gap-2">
+							<div class="flex-1">
+								<img
+									src={project.image}
+									alt={project.title}
+									class={`w-full rounded-md ${project.portraitImage ? "object-contain" : "aspect-video object-cover"} aspect-video `}
+								/>
+							</div>
+							
+							<div class="flex flex-col flex-1 gap-2">
 								<h2 class="text-3xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">{project.title}</h2>
 								<ul>
 									{project.bulletPoints.map((point) => (

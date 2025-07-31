@@ -5,6 +5,7 @@
       { "name": "React", "icon": "/icons/react.svg" },
       { "name": "TypeScript", "icon": "/icons/typescript.svg" },
       { "name": "HTML", "icon": "/icons/html.svg" },
+      { "name": "Tailwind", "icon": "/icons/tailwind.svg" },
       { "name": "Node.js", "icon": "/icons/nodejs.svg" },
       { "name": "PostgreSQL", "icon": "/icons/postgresql.svg" },
       { "name": "Docker", "icon": "/icons/docker.svg" },
@@ -19,7 +20,8 @@
     ],
     "image": "/projects/realtime-chat.png",
     "demoLink": "https://chat.drewmoore.dev",
-    "repoLink": "https://github.com/drew18moore/realtime-chat"
+    "repoLink": "https://github.com/drew18moore/realtime-chat",
+    "featured": true
   },
   {
     "title": "Jimmy Overdrive",
@@ -31,7 +33,8 @@
       "Published to GitHub with clear documentation and runnable release builds"
     ],
     "image": "/projects/mern-social.png",
-    "repoLink": "https://github.com/drew18moore/platformer-java"
+    "repoLink": "https://github.com/drew18moore/platformer-java",
+    "featured": true
   },
   {
     "title": "Social Network App",
@@ -51,6 +54,30 @@
     ],
     "image": "/projects/mern-social.png",
     "demoLink": "https://social-network-mern.vercel.app/",
-    "repoLink": "https://github.com/drew18moore/social-network-MERN"
+    "repoLink": "https://github.com/drew18moore/social-network-MERN",
+    "featured": true
+  },
+  {
+    "title": "Flashcards Mobile App",
+    "technologies": [
+      { "name": "React Native", "icon": "/icons/react.svg" },
+      { "name": "TypeScript", "icon": "/icons/typescript.svg" },
+      { "name": "Redux", "icon": "/icons/redux.svg" },
+      { "name": "Tailwind", "icon": "/icons/tailwind.svg" },
+      { "name": "Java", "icon": "/icons/java.svg" },
+      { "name": "Spring Boot", "icon": "/icons/spring-boot.svg" },
+      { "name": "PostgreSQL", "icon": "/icons/postgresql.svg" },
+      { "name": "Docker", "icon": "/icons/docker.svg" }
+    ],
+    "bulletPoints": [
+      "Responsive and mobile-first UI built using React",
+      "Secured REST API with JWTs using Node.js and Express",
+      "Implemented CI pipeline with GitHub Actions to run tests and verify builds on PRs",
+      "Achieved 94% backend test coverage using Jest and Supertest"
+    ],
+    "image": "/projects/flashcards.png",
+    "portraitImage": true,
+    "repoLink": "https://github.com/drew18moore/flashcards-client",
+    "featured": false
   }
 ]
