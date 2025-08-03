@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "../styles/Skills.css";
+import "../styles/skills.css";
 
 const skills = [
   "/icons/aws.svg",
